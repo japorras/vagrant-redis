@@ -8,11 +8,11 @@ mkdir /opt/redis
 
 cd /opt/redis
 # Use latest stable
-wget -q http://download.redis.io/redis-stable.tar.gz
+wget -q http://download.redis.io/releases/redis-4.0.10.tar.gz
 # Only update newer files
-tar -xz --keep-newer-files -f redis-stable.tar.gz
+tar -xz --keep-newer-files -f redis-4.0.10.tar.gz
 
-cd redis-stable
+cd redis-4.0.10
 make
 make install
 rm /etc/redis.conf
